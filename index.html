@@ -184,7 +184,8 @@
                                           aria-describedby="tt"
                                           data-cmtooltip="<div class=glossaryItemTitle>HTTP</div><div class=glossaryItemBody>&amp;lt;!-- wp:paragraph --&amp;gt;Protocollo di livello applicazione che si basa su una architettura client-server dove il client invia richieste al server, ed il server restituisce risposte. E&amp;#039; la tecnologia principale del Web, usato dai browser, dalle applicazioni desktop e mobili, e costituisce una delle principali tecnologie di Internet.&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;</div>"
                                           data-gt-translate-attributes="[{&quot;attribute&quot;:&quot;data-cmtooltip&quot;, &quot;format&quot;:&quot;html&quot;}]"
-                                          tabindex="0" role="link">Http</span> Response).&nbsp;</p>
+                                          tabindex="0" role="link">Http</span> Response).&nbsp;
+                                    </p>
 
 
 
@@ -563,7 +564,8 @@
                                        metodo bisogna passare una <strong>prima</strong> <strong>callback</strong> che
                                        trasforma la risposta in un oggetto Javascript e che è a sua volta una promise a
                                        cui colleghiamo una <strong>ultima callback</strong> in cui i dati sono pronti ed
-                                       usabili per i nostri scopi.</p>
+                                       usabili per i nostri scopi.
+                                    </p>
 
 
 
@@ -589,7 +591,7 @@
                                        doppio passaggio della fetch potrebbe essere gestito con una sola promise. Nelle
                                        prossime lezioni scriveremo un metodo per gestire tutto con una sola promise.</p>
                                  </div>
-                                 
+
                                  <a class="btn btn-outline-secondary mt-4" href="#home">Torna alla Home</a>
 
                                  <div id="eckb-article-content-footer">
@@ -942,28 +944,673 @@
          <div id="bmc-wbtn"
             style="display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: rgb(95, 127, 255); color: white; border-radius: 32px; position: fixed; right: 18px; bottom: 18px; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px; z-index: 9999; cursor: pointer; font-weight: 600; transition: 0.25s;">
             <img src="https://cdn.buymeacoffee.com/widget/assets/coffee%20cup.svg" alt="Buy Me A Coffee"
-               style="height: 36px; width: 36px; margin: 0; padding: 0;"></div>
+               style="height: 36px; width: 36px; margin: 0; padding: 0;">
+         </div>
          <div
             style="position: fixed; right: 102px; bottom: 16px; transform-origin: right bottom; transform: scale(0.7); opacity: 0; transition: 0.25s; visibility: hidden; background: rgb(255, 255, 255); z-index: 9999; box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 5px, rgba(0, 0, 0, 0.04) 0px 8px 40px, rgba(0, 0, 0, 0.15) 0px 0px 2px; padding: 16px; border-radius: 4px; font-size: 18px; color: rgb(13, 12, 34); width: auto; max-width: 260px; line-height: 1.5; font-family: &quot;Avenir Book&quot;, sans-serif;">
             Puoi sostenere questo sito con un piccolo contributo</div>
 
       </div>
 
-      <div id="lezione2" class="page">
-         <div class="text-center">
-            <h2 class="text-success mb-4">JavaScript: <strong><b>Debuggiing</b></strong></h2>
+      <div id="lezione2" class="page"
+         class="epkb_post_type_1-template-default single single-epkb_post_type_1 postid-788 eckb-front-end-body menu-inline">
 
-            <a class="btn btn-outline-secondary mt-4" href="#home">Torna alla Home</a>
+         <span id="toptarget"></span>
+
+         <div class="preloader disable" style="display: none;">
+            <div class="spinner">
+               <div class="pre-bounce1"></div>
+               <div class="pre-bounce2"></div>
+            </div>
          </div>
+
+
+         <div id="page" class="hfeed site">
+
+            <div class="sydney-offcanvas-menu">
+               <div class="mobile-header-item">
+                  <div class="row valign">
+                     <div class="col-xs-8">
+                        
+                     </div>
+                    
+                  </div>
+               </div>
+               <div class="mobile-header-item offcanvas-items">
+               </div>
+            </div>
+
+
+
+            <div class="sydney-hero-area">
+               <div class="header-image">
+                  <div class="overlay"></div>
+               </div>
+
+            </div>
+
+
+            <div id="content" class="page-wrap">
+               <div class="content-wrapper container">
+                  <div class="row">
+                     <div class="eckb-kb-template "
+                        style="padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 50px; margin-left: 0px; margin-right: 0px;">
+                        <div id="eckb-article-page-container-v2"
+                           class="eckb-article-page-content-counter eckb_ap_active_theme_sydney "
+                           data-mobile_breakpoint="768">
+                           <div id="eckb-article-header"></div>
+                           <div id="eckb-article-body">
+                              <div id="eckb-article-left-sidebar">
+                                 
+                                
+                              </div>
+                              <article id="eckb-article-content" data-article-id="788">
+                                 <div id="eckb-article-content-header-v2">
+                                    <div id="eckb-article-content-header-row-1">
+                                       <div class="eckb-article-content-header-row-left-group">
+                                          <div id="eckb-article-back-navigation-container">
+                                             <div class="eckb-navigation-back  "
+                                                style="margin-top: 4px; margin-right: 15px; margin-bottom: 4px; margin-left: 4px;">
+                                             </div>
+                                          </div>
+                                          <div id="eckb-article-content-breadcrumb-container">
+                                             <div class="eckb-breadcrumb"
+                                                style="padding-top: 0px; padding-right: 4px; padding-bottom: 0px; padding-left: 4px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-size:14px;">
+
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="eckb-article-content-header-row-right-group">
+                                          <div id="eckb-article-content-toolbar-container">
+                                             <div class="eckb-article-content-toolbar-button-container">
+                                                <span class="eckb-print-button-container"> <span
+                                                      class="eckb-toolbar-button-text">Stampa</span><span
+                                                      class="eckb-toolbar-button-icon epkbfa epkbfa-print"></span>
+                                                </span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div id="eckb-article-content-header-row-2">
+                                       <div class="eckb-article-content-header-row-left-group">
+                                          <div id="eckb-article-content-title-container">
+                                             <h1 class="eckb-article-title">Debugging</h1>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div id="eckb-article-content-body">
+                                    <h2 class="wp-block-heading" data-id="articleTOC_0"><strong>Ambienti di
+                                          sviluppo</strong></h2>
+
+
+
+                                    <p>Per svolgere gli esercizi Javascript sono possibili diverse soluzioni. Qua
+                                       ne indichiamo due.</p>
+
+
+
+                                    <h3 class="wp-block-heading" data-id="articleTOC_1"><strong>In locale: Visual
+                                          Studio Code</strong></h3>
+
+
+
+                                    <p>Visual Studio Code è una applicazione IDE (ambiente integrato di sviluppo)
+                                       compatibile con la maggior parte dei linguaggi di programmazione. E’
+                                       disponibile per Linux, MacOS e Windows. Visual Studio Code è preconfigurato
+                                       per scrivere applicazioni Web Javascript. .</p>
+
+
+
+                                    <p>Una volta installato e configurato l’ambiente si ha a disposizione
+                                       l’ambiente IDE di sviluppo. Per poter testare le pagine web bisogna però
+                                       installare il plugin Live server. Una volta installato, permette di
+                                       attivare su qualsiasi pagina html con il tasto destro di avere un
+                                       miniserver web locale (<span class="glossaryLink" aria-describedby="tt"
+                                          data-cmtooltip="<div class=glossaryItemTitle>HTTP</div><div class=glossaryItemBody>&amp;lt;!-- wp:paragraph --&amp;gt;Protocollo di livello applicazione che si basa su una architettura client-server dove il client invia richieste al server, ed il server restituisce risposte. E&amp;#039; la tecnologia principale del Web, usato dai browser, dalle applicazioni desktop e mobili, e costituisce una delle principali tecnologie di Internet.&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;</div>"
+                                          data-gt-translate-attributes="[{&quot;attribute&quot;:&quot;data-cmtooltip&quot;, &quot;format&quot;:&quot;html&quot;}]"
+                                          tabindex="0" role="link">http</span>://localhost:5500) che permette di
+                                       testare subito la pagina web.</p>
+
+
+
+                                    <h3 class="wp-block-heading" data-id="articleTOC_2">
+                                       <strong>Online&nbsp;</strong>
+                                    </h3>
+
+
+
+                                    <p>Online sono disponibili diversi ambienti di sviluppo, quasi tutti basati su
+                                       una versione online di VS Code. L’ambiente qui consigliato è
+                                       Stackblitz.&nbsp;</p>
+
+
+
+                                    <p>Qui un&nbsp;<a
+                                          href="https://stackblitz.com/edit/vitejs-vite-29hxke?file=index.html">esempio
+                                          di applicazione</a>&nbsp;che implementa quanto spiegato nella lezione
+                                       che contiene un&nbsp;<a
+                                          href="https://cipiaceinfo.it/docs/programmazione/javascript/una-applicazione-javascript-completa/">esempio
+                                          di applicazione</a>.</p>
+
+
+
+                                    <p>Qui un template (che include la libreria Bootstrap per semplificare il
+                                       layout della pagina html) da cui partire per svolgere gli esercizi:&nbsp;<a
+                                          href="https://stackblitz.com/edit/vitejs-vite-btypbi?file=index.js">https://stackblitz.com/edit/vitejs-vite-btypbi?file=index.js</a>&nbsp;Per
+                                       utilizzarlo eseguire una fork (cliccare sul pulsante), rinominare il
+                                       progetto e procedere con lo sviluppo dell’esercizio.</p>
+
+
+
+                                    <h2 class="wp-block-heading" data-id="articleTOC_3">Debugging</h2>
+
+
+
+                                    <p>Il debugger ed in generale gli strumenti di sviluppo sono fondamentali per
+                                       analizzare bug, vedere lo stato delle variabili e comprendere perché
+                                       l’applicazione non funziona come vorremmo.</p>
+
+
+
+                                    <p>Al debugger si accede dal browser (es. Chrome) premendo tasto destro e
+                                       accedendo alla voce “ispeziona”. Da li si apre una sezione della finestra
+                                       dove è possibile vedere tra gli altri i seguenti tab:</p>
+
+
+
+                                    <ul class="wp-block-list">
+                                       <li><strong>Elements</strong>: contiene gli elementi di pagina e il loro
+                                          stile CSS, utile per vedere la struttura della pagina effettivamente
+                                          renderizzata;</li>
+
+
+
+                                       <li><strong>Console</strong>: si accedere alla console, e si possono
+                                          interrogare gli oggetti in base al contesto;</li>
+
+
+
+                                       <li><strong>Sources</strong>: da qui si accede alle risorse compresi gli
+                                          script JS, lo approfondiremo tra poco;</li>
+
+
+
+                                       <li><strong>Network</strong>: da qui si vede il risultato delle chiamate
+                                          anche <span class="glossaryLink" aria-describedby="tt"
+                                             data-cmtooltip="<div class=glossaryItemTitle>AJAX</div><div class=glossaryItemBody>&amp;lt;!-- wp:paragraph --&amp;gt;Tecnologia usata dal linguaggio Javascript per realizzare richieste HTTP all&amp;#039;interno di una applicazione in un browser senza ricaricare la pagina. Il suo funzionamento è asincrono e viene usato per inviare e ricevere dati da/verso web services.&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;</div>"
+                                             data-gt-translate-attributes="[{&quot;attribute&quot;:&quot;data-cmtooltip&quot;, &quot;format&quot;:&quot;html&quot;}]"
+                                             tabindex="0" role="link">AJAX</span>;</li>
+
+
+
+                                       <li><strong>Application</strong>: da qui si può accedere a Local storage,
+                                          Session storage e Cookies (oltre ad altri strumenti).</li>
+                                    </ul>
+
+
+
+                                    <p>In questa sede approfondiamo il debugger, ovvero la sezione sources. Se
+                                       eseguiamo l’applicazione sopra indicata compariirà questo codice. Se
+                                       clicchiamo appena a sinistra del numero di riga possiamo aggiungere dei
+                                       breakpoint ovvero dei punti dove l’esecuzione si interrompe se la finestra
+                                       di debug è aperta: qui ad esempio c’è un breakpoint alla riga 22.</p>
+
+
+
+                                    <p>Quando il runtime passa da questa riga, l’esecuzione si ferma e possiamo
+                                       ispezionare il valore delle variabili, verificando eventuali problematiche,
+                                       ad esempio un binding non funzionante, un JSON non correttamente
+                                       formattato, ecc. </p>
+
+
+
+                                    <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async"
+                                          width="1024" height="492"
+                                          src="https://cipiaceinfo.it/wp-content/uploads/2024/07/Schermata-2024-07-07-alle-18.29.56-1024x492.png"
+                                          alt="" class="wp-image-392"
+                                          srcset="https://cipiaceinfo.it/wp-content/uploads/2024/07/Schermata-2024-07-07-alle-18.29.56-1024x492.png 1024w, https://cipiaceinfo.it/wp-content/uploads/2024/07/Schermata-2024-07-07-alle-18.29.56-300x144.png 300w, https://cipiaceinfo.it/wp-content/uploads/2024/07/Schermata-2024-07-07-alle-18.29.56-768x369.png 768w, https://cipiaceinfo.it/wp-content/uploads/2024/07/Schermata-2024-07-07-alle-18.29.56-1536x738.png 1536w, https://cipiaceinfo.it/wp-content/uploads/2024/07/Schermata-2024-07-07-alle-18.29.56-2048x985.png 2048w, https://cipiaceinfo.it/wp-content/uploads/2024/07/Schermata-2024-07-07-alle-18.29.56-1000x481.png 1000w, https://cipiaceinfo.it/wp-content/uploads/2024/07/Schermata-2024-07-07-alle-18.29.56-230x111.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/07/Schermata-2024-07-07-alle-18.29.56-350x168.png 350w, https://cipiaceinfo.it/wp-content/uploads/2024/07/Schermata-2024-07-07-alle-18.29.56-480x231.png 480w"
+                                          sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+                                    <p>Diventa fondamentale acquisire l’utilizzo di questo strumento per poter
+                                       eseguire il debugging.</p>
+
+
+
+                                    <h3 class="wp-block-heading" data-id="articleTOC_4">Try Catch</h3>
+
+
+
+                                    <p>Il costrutto try catch serve a verificare un evento eccezionale, che
+                                       avviene al di fuori del controllo del programmatore. La struttura di codice
+                                       è la seguente:</p>
+
+
+
+                                    <div class="hcb_wrap">
+                                       <pre class="prism line-numbers  language-js"
+                                          data-lang="JavaScript"><code class=" language-js" data-hcb-clip="1"><span class="token keyword">try</span> <span class="token punctuation">{</span>
+                 <span class="token comment">// istruzioni</span>
+               <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                 <span class="token comment">// istruzioni in caso di errore</span>
+               <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                                       <button class="hcb-clipboard"
+                                          data-clipboard-target="[data-hcb-clip=&quot;1&quot;]"
+                                          data-clipboard-action="copy" aria-label="Copy code to clipboard"></button>
+                                    </div>
+
+
+
+                                    <p>In questo modo se c’è un errore non previsto dal programmatore (ad esempio
+                                       un errore di calcolo, una elaborazione su dati mancanti, una connessione ad
+                                       Internet che si interrompe, ecc.) la try catch permette di gestire
+                                       l’errore, anche bloccante e per esempio stamparne un log o avvertire
+                                       l’utente.</p>
+
+
+
+                                    <p>Qui un esempio su un calcolo matematico:</p>
+
+
+
+                                    <div class="hcb_wrap">
+                                       <pre
+                                          class="prism line-numbers  language-plain"><code class=" language-plain" data-hcb-clip="2">const a = parseInt(inputA.value);
+               const b = parseInt(inputB.value);
+               try {
+                 const c = a/b;
+                 divC.innerText = c;
+               } catch (error) {
+                 console.log(error);
+                 divC.innerText = "errore di calcolo: " + error;
+               }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                                       <button class="hcb-clipboard"
+                                          data-clipboard-target="[data-hcb-clip=&quot;2&quot;]"
+                                          data-clipboard-action="copy" aria-label="Copy code to clipboard"></button>
+                                    </div>
+
+
+
+                                    <p>Ad esempio se a e b non sono numeri, oppure se b vale 0, si può incorrere
+                                       in errori.</p>
+
+
+
+                                    <p>Per quanto riguarda la fetch, la try catch non funziona, per la natura
+                                       asincrona della fetch. Vedremo nelle prossime lezioni come gestire errori
+                                       anche nella programmazione asincrona.</p>
+                                 </div>
+                                 <div id="eckb-article-content-footer">
+                                    <a class="btn btn-outline-secondary mt-4" href="#home">Torna alla Home</a>
+                                    <div class="epkb-article-navigation-container ">
+                                       <div class="epkb-article-navigation__previous"> <a
+                                             href="https://cipiaceinfo.it/docs/programmazione/javascript/una-applicazione-javascript-completa/"
+                                             rel="prev">
+                                          </a> </div>
+                                       <div class="epkb-article-navigation__next"><a
+                                             href="https://cipiaceinfo.it/docs/programmazione/javascript/canvas/"
+                                             rel="next">
+                                             
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </article><!-- /#eckb-article-content -->
+                              <div id="eckb-article-right-sidebar"></div>
+                           </div><!-- /#eckb-article-body -->
+                           <div id="eckb-article-footer"></div>
+                        </div><!-- /#eckb-article-page-container-v2 -->
+
+                        <style id="eckb-article-styles" type="text/css">
+                           #eckb-article-body .eckb-article-toc ul a.active {
+                              background-color: #000000;
+                              color: #ffffff;
+                           }
+
+                           #eckb-article-body .eckb-article-toc ul a:hover {
+                              background-color: #e1ecf7;
+                              color: #000000;
+                           }
+
+                           #eckb-article-body .eckb-article-toc__inner {
+                              border-color: #2b98e5;
+                              font-size: 14px !important;
+                              background-color: #fcfcfc;
+                           }
+
+                           #eckb-article-body .eckb-article-toc__inner a {
+                              color: #000000;
+                              font-size: 14px !important;
+                           }
+
+                           #eckb-article-body .eckb-article-toc__title {
+                              color: #2b98e5;
+                              font-size: 15px !important;
+                           }
+
+                           @media only screen and (min-width:768px) {
+
+                              #eckb-article-page-container-v2 #eckb-article-body #eckb-article-content #eckb-article-content-header-v2 #eckb-article-content-header-row-1,
+                              #eckb-article-page-container-v2 #eckb-article-body #eckb-article-content #eckb-article-content-header-v2 #eckb-article-content-header-row-2,
+                              #eckb-article-page-container-v2 #eckb-article-body #eckb-article-content #eckb-article-content-header-v2 #eckb-article-content-header-row-3,
+                              #eckb-article-page-container-v2 #eckb-article-body #eckb-article-content #eckb-article-content-header-v2 #eckb-article-content-header-row-4,
+                              #eckb-article-page-container-v2 #eckb-article-body #eckb-article-content #eckb-article-content-header-v2 #eckb-article-content-header-row-5 {
+                                 flex-direction: row;
+                              }
+                           }
+
+                           #eckb-article-content-header-row-1 {
+                              margin-bottom: 8px;
+                           }
+
+                           #eckb-article-content-header-row-1 .eckb-article-content-header-row-left-group,
+                           #eckb-article-content-header-row-1 .eckb-article-content-header-row-right-group {
+                              align-items: center;
+                           }
+
+                           .eckb-article-content-toolbar-button-container {
+                              background-color: #fefefe;
+                              padding: 10px 10px 10px 10px;
+                              margin: 0px 0px 0px 0px;
+                              border-radius: 0px;
+                              border-width: 0px;
+                              border-color: #ffffff;
+                              border-style: solid;
+                           }
+
+                           .eckb-article-content-toolbar-button-container .eckb-toolbar-button-text {
+                              color: #000000;
+                              font-size: 15px;
+                           }
+
+                           .eckb-article-content-toolbar-button-container .eckb-toolbar-button-icon {
+                              color: #000000;
+                              font-size: 20px;
+                           }
+
+                           .eckb-article-content-toolbar-button-container:hover {
+                              background-color: #ffffff;
+                           }
+
+                           .eckb-article-content-toolbar-button-container:hover .eckb-toolbar-button-text {
+                              color: #000000;
+                           }
+
+                           .eckb-article-content-toolbar-button-container:hover .eckb-toolbar-button-icon {
+                              color: #000000;
+                           }
+
+                           #eckb-article-content-header-row-2 {
+                              margin-bottom: 15px;
+                           }
+
+                           #eckb-article-content-header-row-2 .eckb-article-content-header-row-left-group,
+                           #eckb-article-content-header-row-2 .eckb-article-content-header-row-right-group {
+                              align-items: flex-end;
+                           }
+
+                           #eckb-article-content-footer .epkb-article-navigation-container a {
+                              background-color: #f7f7f7;
+                              color: #1e73be;
+                           }
+
+                           #eckb-article-content-footer .epkb-article-navigation-container a:hover {
+                              background-color: #dee3e5;
+                              color: #6d6d6d;
+                           }
+                        </style>
+                     </div>
+                  </div>
+               </div>
+            </div><!-- #content -->
+
+
+
+
+            <footer id="colophon" class="site-footer">
+               <div class="container">
+                  <div class="site-info">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="sydney-credits">© 2024 Ci piace info. </div>
+                        </div>
+                        <div class="col-md-6">
+                        </div>
+                     </div>
+                  </div>
+               </div><!-- .site-info -->
+            </footer><!-- #colophon -->
+
+
+
+         </div><!-- #page -->
+
+         <a on="tap:toptarget.scrollTo(duration=200)" class="go-top visibility-all position-right"><i
+               class="sydney-svg-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 15l7-7 7 7" stroke-width="3" stroke-linejoin="round"></path>
+               </svg></i></a>
+         <link rel="stylesheet" id="cmtooltip-css"
+            href="https://cipiaceinfo.it/wp-content/plugins/enhanced-tooltipglossary/assets/css/tooltip.min.css?ver=4.3.11"
+            type="text/css" media="all">
+         <style id="cmtooltip-inline-css" type="text/css">
+            #tt {
+               z-index: 1500;
+            }
+
+            #tt #ttcont div.glossaryItemTitle {
+               color: #000000 !important;
+            }
+
+            #tt #ttcont div.glossaryItemTitle {
+               background-color: #transparent !important;
+               padding: 0 !important;
+               margin: 0px !important;
+               border-top: 10px solid transparent;
+               border-bottom: 10px solid transparent;
+            }
+
+            #tt #ttcont div.glossaryItemTitle {
+               font-size: 13px !important;
+            }
+
+            #tt #ttcont div.glossaryItemBody {
+               padding: 0;
+               font-size: 13px;
+            }
+
+            #tt #ttcont .mobile-link {
+               font-size: 13px;
+            }
+
+            .mobile-link a.glossaryLink {
+               color: #fff !important;
+            }
+
+            .mobile-link:before {
+               content: "Term link:  "
+            }
+
+
+
+            .tiles ul.glossaryList li {
+               min-width: 85px !important;
+               width: 85px !important;
+            }
+
+            .tiles ul.glossaryList span {
+               min-width: 85px;
+               width: 85px;
+            }
+
+            .cm-glossary.tiles.big ul.glossaryList a {
+               min-width: 179px;
+               width: 179px
+            }
+
+            .cm-glossary.tiles.big ul.glossaryList span {
+               min-width: 179px;
+               width: 179px;
+            }
+
+            span.glossaryLink,
+            a.glossaryLink {
+               border-bottom: dotted 1px #000000;
+               color: #000000 !important;
+            }
+
+            span.glossaryLink.temporary,
+            a.glossaryLink.temporary {
+               border-bottom: dotted 1px #eeff11;
+            }
+
+            span.glossaryLink:hover,
+            a.glossaryLink:hover {
+               border-bottom: solid 1px #333333;
+               color: #333333 !important;
+            }
+
+            .glossaryList .glossary-link-title {
+               font-weight: normal !important;
+            }
+
+
+            #tt #tt-btn-close {
+               color: #222 !important
+            }
+
+            .cm-glossary.grid ul.glossaryList li[class^='ln'] {
+               width: 200px !important
+            }
+
+            #tt #tt-btn-close {
+               direction: rtl;
+               font-size: 20px !important
+            }
+
+
+            #tt #ttcont glossaryItemBody * {
+               color: #ffffff
+            }
+
+
+
+            #tt #ttcont a {
+               color: #2EA3F2 !important
+            }
+
+
+
+            #ttcont {
+               box-shadow: 0px 0px 20px #666666;
+               -moz-box-shadow: 0px 0px 20px #666666;
+               -webkit-box-shadow: 0px 0px 20px #666666;
+            }
+
+            .cm-glossary.term-carousel .slick-slide,
+            .cm-glossary.tiles-with-definition ul>li {
+               height: 250px !important
+            }
+
+            .cm-glossary.tiles-with-definition ul {
+               grid-template-columns: repeat(auto-fill, 220px) !important;
+            }
+
+            .glossary-search-wrapper {
+               display: inline-block;
+            }
+
+
+
+            input.glossary-search-term {
+               outline: none;
+            }
+
+
+
+
+            button.glossary-search.button {
+               outline: none;
+            }
+         </style>
+         <link rel="stylesheet" id="dashicons-css"
+            href="https://cipiaceinfo.it/wp-includes/css/dashicons.min.css?ver=6.7.1" type="text/css" media="all">
+         <script type="text/javascript"
+            src="https://cipiaceinfo.it/wp-content/themes/sydney/js/functions.min.js?ver=20240307"
+            id="sydney-functions-js"></script>
+         <script type="text/javascript"
+            src="https://cipiaceinfo.it/wp-content/plugins/highlighting-code-block/assets/js/prism.js?ver=2.0.1"
+            id="hcb-prism-js"></script>
+         <script type="text/javascript" src="https://cipiaceinfo.it/wp-includes/js/clipboard.min.js?ver=2.0.11"
+            id="clipboard-js"></script>
+         <script type="text/javascript" id="hcb-script-js-extra">
+            /* <![CDATA[ */
+            var hcbVars = { "showCopyBtn": "1", "copyBtnLabel": "Copy code to clipboard" };
+            /* ]]> */
+         </script>
+         <script type="text/javascript"
+            src="https://cipiaceinfo.it/wp-content/plugins/highlighting-code-block/build/js/hcb_script.js?ver=2.0.1"
+            id="hcb-script-js"></script>
+         <script type="text/javascript"
+            src="https://cipiaceinfo.it/wp-content/plugins/enhanced-tooltipglossary/assets/js/modernizr.min.js?ver=4.3.11"
+            id="cm-modernizr-js-js"></script>
+         <script type="text/javascript"
+            src="https://cipiaceinfo.it/wp-content/plugins/enhanced-tooltipglossary/assets/js/purify.min.js?ver=4.3.11"
+            id="cm-purify-js-js"></script>
+         <script type="text/javascript" id="tooltip-frontend-js-js-extra">
+            /* <![CDATA[ */
+            var cmtt_data = { "cmtooltip": { "placement": "horizontal", "clickable": false, "close_on_moveout": true, "only_on_button": false, "touch_anywhere": false, "delay": 0, "timer": 0, "minw": 200, "maxw": 400, "top": 5, "left": 25, "endalpha": 95, "zIndex": 1500, "borderStyle": "none", "borderWidth": "0px", "borderColor": "#000000", "background": "#666666", "foreground": "#ffffff", "fontSize": "13px", "padding": "2px 12px 3px 7px", "borderRadius": "6px", "tooltipDisplayanimation": "no_animation", "tooltipHideanimation": "no_animation", "toolip_dom_move": false, "link_whole_tt": false, "close_button": true, "close_button_mobile": true, "close_symbol": "dashicons-no" }, "ajaxurl": "https:\/\/cipiaceinfo.it\/wp-admin\/admin-ajax.php", "post_id": "788", "mobile_disable_tooltips": "0", "desktop_disable_tooltips": "0", "tooltip_on_click": "0", "exclude_ajax": "cmttst_event_save", "cmtooltip_definitions": [] };
+            /* ]]> */
+         </script>
+         <script type="text/javascript"
+            src="https://cipiaceinfo.it/wp-content/plugins/enhanced-tooltipglossary/assets/js/tooltip.min.js?ver=4.3.11"
+            id="tooltip-frontend-js-js"></script>
+         <script>
+            /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
+         </script>
+         <div id="tt" role="tooltip" aria-label="Tooltip content" class="cmtt"></div>
+         <script data-name="BMC-Widget" data-cfasync="false"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="cipiaceinfo"
+            data-description="Support me on Buy me a coffee!"
+            data-message="Puoi sostenere questo sito con un piccolo contributo" data-color="#5F7FFF"
+            data-position="Left" data-x_margin="18" data-y_margin="18"></script>
+
+
+
+         <div
+            style="position: fixed; top: 0px; left: 0px; width: 0px; height: 0px; background: rgba(0, 0, 0, 0); text-align: center; z-index: 9999999;">
+            <div id="bmc-close-btn"
+               style="position: fixed; align-items: center; justify-content: center; display: flex; visibility: hidden; border-radius: 100px; width: 40px; height: 40px; top: 16px; right: 16px; z-index: 9999999;">
+               <svg style="width: 16px;height:16px;" width="16" height="16" viewBox="0 0 28 28" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M2.45156 27.6516L0.351562 25.5516L11.9016 14.0016L0.351562 2.45156L2.45156 0.351562L14.0016 11.9016L25.5516 0.351562L27.6516 2.45156L16.1016 14.0016L27.6516 25.5516L25.5516 27.6516L14.0016 16.1016L2.45156 27.6516Z"
+                     fill="#666"></path>
+               </svg>
+            </div><iframe id="bmc-iframe" allow="payment" title="Buy Me a Coffee"
+               style="position: fixed; margin: 0px; border: 0px; right: 18px; bottom: 90px; height: 0px; opacity: 0; width: 420px; max-width: 420px; min-height: 610px; max-height: 610px; border-radius: 10px; box-shadow: rgba(13, 12, 34, 0.1) -6px 0px 30px; background: url(&quot;https://cdn.buymeacoffee.com/assets/img/widget/loader.svg&quot;) center center / 64px no-repeat rgb(255, 255, 255); z-index: 999999; transition: 0.25s; transform-origin: right bottom; transform: scale(0); user-select: none;"></iframe>
+         </div>
+         <div id="bmc-wbtn"
+            style="display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: rgb(95, 127, 255); color: white; border-radius: 32px; position: fixed; right: 18px; bottom: 18px; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px; z-index: 9999; cursor: pointer; font-weight: 600; transition: 0.25s;">
+            <img src="https://cdn.buymeacoffee.com/widget/assets/coffee%20cup.svg" alt="Buy Me A Coffee"
+               style="height: 36px; width: 36px; margin: 0; padding: 0;">
+         </div>
+         <div
+            style="position: fixed; right: 102px; bottom: 16px; transform-origin: right bottom; transform: scale(0.7); opacity: 0; transition: 0.25s; visibility: hidden; background: rgb(255, 255, 255); z-index: 9999; box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 5px, rgba(0, 0, 0, 0.04) 0px 8px 40px, rgba(0, 0, 0, 0.15) 0px 0px 2px; padding: 16px; border-radius: 4px; font-size: 18px; color: rgb(13, 12, 34); width: auto; max-width: 260px; line-height: 1.5; font-family: &quot;Avenir Book&quot;, sans-serif;">
+            Puoi sostenere questo sito con un piccolo contributo</div>
       </div>
 
       <div id="lezione3" class="page">
          <div class="text-center">
             <h2 class="text-warning mb-4">Strumneti web: <strong><b>Cache Remota</b></strong></h2>
-
+   
             <a class="btn btn-outline-secondary mt-4" href="#home">Torna alla Home</a>
          </div>
       </div>
+      
+   </div>
+
 
    </div>
    <script type="module" src="./index.js"></script>
